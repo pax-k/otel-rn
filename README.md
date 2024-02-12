@@ -1,4 +1,8 @@
-## How to use
+## OpenTelemetryJS with React Native
+- this project shows how OpenTelemetryJS can be used with React Native
+- uses `@traceloop/instrumentation-openai` to trace OpenAI calls
+
+## How to run
 - update .env.development.local
 - run:
 ```
