@@ -15,7 +15,7 @@ export default (serviceName, openAiInstrumentation) => {
   });
 
   const exporter = new OTLPTraceExporter({
-    url: "https://otlp-gateway-prod-eu-north-0.grafana.net/otlp/v1/traces",
+    url: process.env?.EXPO_PUBLIC_OTLP_ENDPOINT,
     headers: {
       Authorization: process.env?.EXPO_PUBLIC_GRAFANA_BASIC_AUTH,
     },
