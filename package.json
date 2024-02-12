@@ -4,15 +4,29 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "NODE_ENV=development expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
+    "@flyskywhy/react-native-browser-polyfill": "^2.0.1",
+    "@opentelemetry/core": "^1.21.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.48.0",
+    "@opentelemetry/instrumentation": "^0.48.0",
+    "@opentelemetry/resources": "^1.21.0",
+    "@opentelemetry/sdk-trace-base": "^1.21.0",
+    "@opentelemetry/sdk-trace-web": "^1.21.0",
+    "@traceloop/instrumentation-openai": "^0.3.6",
+    "eventemitter3": "^5.0.1",
+    "events": "^3.3.0",
     "expo": "~50.0.6",
     "expo-status-bar": "~1.11.1",
+    "openai": "^4.27.0",
     "react": "18.2.0",
-    "react-native": "0.73.4"
+    "react-native": "0.73.4",
+    "react-native-blob-jsi-helper": "^0.3.1",
+    "react-native-blob-util": "^0.19.6",
+    "react-native-mime-types": "^2.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
